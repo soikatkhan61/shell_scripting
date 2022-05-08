@@ -1,6 +1,14 @@
 #! /bin/bash
+echo "enter size of the array: "
+read size
 
-arr=(1 1 2 2 2 3 3 3 3 4 4 5)
+for ((i=0; i< size; i++))
+do
+    echo "enter elements for $i"
+    read input
+    arr[i]=$input
+done
+
 for ((i = 0; i < ${#arr[@]}; i++)); do
     arr2[i]=${arr[i]}
     arr3[i]=0
