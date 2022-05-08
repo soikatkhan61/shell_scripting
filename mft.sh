@@ -35,8 +35,9 @@ do
     else
         echo -e "\t\t YES \t\t$(($bs-${mp[i]}))"
         tif=$(($tif+$(($bs-${mp[i]}))))
-        p=$p+1
+        p=$(($p+1))
     fi
+    echo ""
 done 
 
 if [ $i -lt $n ]
