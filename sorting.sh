@@ -17,7 +17,7 @@ done
 
 arr=( 10 8 20 100 12 2 )
 
-echo "Original Order of this array"
+echo -e "\nOriginal Order of this array"
 echo ${arr[*]}
 
 bubble 
